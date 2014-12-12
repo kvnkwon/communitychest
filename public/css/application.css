@@ -1,0 +1,22 @@
+body {
+  background: url("../img/skulls.png") repeat 0 0;
+}
+
+a {
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.site-logo {
+  font-size: 1.5125rem;
+  color: rgb(238, 191, 16) !important;
+}
+
+.graphic-index {
+  margin-top: 10%;
+  background-image: url("../img/chest.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+}

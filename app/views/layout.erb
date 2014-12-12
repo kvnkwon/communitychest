@@ -23,17 +23,13 @@
   <script>
     $(document).foundation();
   </script>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
   <title>DBC Community Chest</title>
 </head>
 <body>
  <header>
-  <div id="login-bar">
-    <% if current_user %>
-      <a href="/logout">Logout</a>
-    <% else %>
-      <a href="/login">Login</a> | <a href="/signup">Signup</a>
-    <% end %>
+  <%= erb :nav %>
   </header>
   <%= yield %>
 </body>
