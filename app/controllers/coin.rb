@@ -17,4 +17,23 @@ post '/coin/new' do
   end
 end
 
-# View a user's coins
+# Edit a coin
+get '/coin/:coin_id/edit' do
+  @coin = Coin.find(params[:coin_id])
+  if @coin.user == current_user
+    erb :'coin/edit'
+  else
+    redirect('/')
+  end
+end
+
+put '/coin/:coin_id/edit' do
+  coin = Coin.find(params[:coin_id])
+  coin.update(params[:coin])
+  if coin.save
+    redirect("/user/#{current_user.id}")
+  else
+    session[:error] = coin.errors.messages
+    redirect("/coin/#{coin.id}/edit")
+  end
+end

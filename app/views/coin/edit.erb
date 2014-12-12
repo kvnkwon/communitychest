@@ -1,0 +1,7 @@
+<form action="/coin/<%= @coin.id %>/edit" method="POST">
+  <%= display_error %>
+  <label>Advice:</label>
+  <input type="text" name="coin[content]" value="<%= @coin.content %>" /><br>
+  <input type="hidden" name="_method" value="PUT">
+  <button type="submit" class="button default" value="Submit">Edit!</button>
+</form>
