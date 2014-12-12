@@ -20,3 +20,14 @@ a {
   height: 650px;
   width: 100%;
 }
+
+.coin-graphic {
+  margin-top: 10%;
+  background-image: url("../img/coin-hi.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+  display: none;
+}
