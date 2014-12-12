@@ -37,3 +37,10 @@ put '/coin/:coin_id/edit' do
     redirect("/coin/#{coin.id}/edit")
   end
 end
+
+# Delete a coin
+delete '/coin/:id' do |id|
+  @coin = Coin.find(id)
+  @coin.destroy
+  redirect('/')
+end
