@@ -1,0 +1,21 @@
+COMMUNITY CHEST
+
+MODELS
+- database schema
+  users table
+    user has many coins
+    t.string login
+    t.string password_digest
+  coins table
+    coin belongs to a user
+    t.text content
+- user auth mechanics
+
+ROUTES/CONTROLLERS
+
+
+VIEWS
+- coin display (landing)
+- coin creation
+- a user's coins
+  edit a coin
