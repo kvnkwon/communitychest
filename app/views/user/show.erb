@@ -1,3 +1,7 @@
 <% @coins.each do |coin| %>
-  <%= coin.content %><br>
+  <%= coin.content %>
+  <% if coin.user == current_user %>
+    <a href="/coin/<%= coin.id %>/edit">Edit</a>
+  <% end %>
+  <br>
 <% end %>

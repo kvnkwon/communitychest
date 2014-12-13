@@ -3,8 +3,8 @@
   <label>Advice:</label>
   <input type="text" name="coin[content]" value="<%= @coin.content %>" /><br>
   <input type="hidden" name="_method" value="PUT">
-  <button type="submit" class="button default" value="Submit">Edit!</button>
+  <button type="submit" class="button default" value="Submit">Save</button>
 </form>
 <form action="/coin/<%= @coin.id %>" method="POST">
   <input type="hidden" name="_method" value="DELETE">
-  <button type="submit" class="button alert" value="Submit">Delete!</buttonwarning</form>
+  <button type="submit" class="button alert" value="Submit">Delete</buttonwarning</form>

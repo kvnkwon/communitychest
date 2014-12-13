@@ -1,5 +1,12 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background: url("../img/skulls.png") repeat 0 0;
+  height: 100%;
+  width: 100%;
 }
 
 a {
@@ -11,14 +18,22 @@ a {
   color: rgb(238, 191, 16) !important;
 }
 
+.vert-container {
+  display: table;
+  height: 100%;
+  width: 50%;
+  max-width: 650px;
+}
+
 .graphic-index {
   margin-top: 10%;
   background-image: url("../img/chest.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 650px;
-  width: 100%;
+
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .coin-graphic {
@@ -28,6 +43,12 @@ a {
   background-size: contain;
   background-position: center;
   height: 650px;
-  width: 100%;
+  width: 80%;
+
   display: none;
+  vertical-align: middle;
+}
+
+.coin-advice {
+  text-align: center;
 }

@@ -48,5 +48,5 @@ end
 delete '/coin/:id' do |id|
   @coin = Coin.find(id)
   @coin.destroy
-  redirect('/')
+  redirect("/user/#{current_user.id}")
 end
