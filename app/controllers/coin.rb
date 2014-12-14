@@ -17,12 +17,6 @@ post '/coin/new' do
   end
 end
 
-# View a coin
-get '/coin/:coin_id' do |id|
-  @coin = Coin.find(id)
-  erb :'coin/show'
-end
-
 # Edit a coin
 get '/coin/:coin_id/edit' do
   @coin = Coin.find(params[:coin_id])
