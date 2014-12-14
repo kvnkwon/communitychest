@@ -35,18 +35,6 @@ a {
   vertical-align: middle;
 }
 
-/*.coin-graphic {
-  margin-top: 10%;
-  background-image: url("../img/coin-hi.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 650px;
-  width: 80%;
-  display: none;
-  vertical-align: middle;
-}*/
-
 #coin-advice {
   text-align: center;
   visibility: hidden;
@@ -54,4 +42,25 @@ a {
   margin-right: auto;
   max-width: 50%;
   word-wrap: break-word;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+@media (max-width: 1110px) {
+  #coin-advice {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 840px) {
+  #coin-advice {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 645px) {
+  #coin-advice {
+    font-size: 16px;
+  }
 }
