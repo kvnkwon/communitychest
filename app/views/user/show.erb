@@ -1,11 +1,15 @@
 <div class="small-8 small-centered columns">
   <div class="row coin-form">
-    <h2 class='user-loot'><i class="fa fa-user"></i> <%= @coins.first.user.name.upcase %>'s LOOT</h2>
-    <% @coins.each do |coin| %>
-      <h4><i class="fa fa-circle coin"></i> <%= coin.content %><h4>
-      <% if coin.user == current_user %>
-        <a href="/coin/<%= coin.id %>/edit">Edit Coin</a>
-      <% end %><br>
+    <% if @coins.empty? %>
+      <h2>Loot is empty.</h2>
+    <% else %>
+      <h2 class='user-loot'><i class="fa fa-user"></i> <%= @coins.first.user.name.upcase %>'s LOOT</h2>
+      <% @coins.each do |coin| %>
+        <h4><i class="fa fa-circle coin"></i> <%= coin.content %><h4>
+        <% if coin.user == current_user %>
+          <a href="/coin/<%= coin.id %>/edit">Edit Coin</a>
+        <% end %><br>
+      <% end %>
     <% end %>
   </div>
 </div>
