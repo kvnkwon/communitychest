@@ -1,10 +1,17 @@
-<form action="/coin/<%= @coin.id %>/edit" method="POST">
-  <%= display_error %>
-  <label>Advice:</label>
-  <input type="text" name="coin[content]" value="<%= @coin.content %>" /><br>
-  <input type="hidden" name="_method" value="PUT">
-  <button type="submit" class="button default" value="Submit">Save</button>
-</form>
-<form action="/coin/<%= @coin.id %>" method="POST">
-  <input type="hidden" name="_method" value="DELETE">
-  <button type="submit" class="button alert" value="Submit">Delete</buttonwarning</form>
+<div class="small-8 small-centered columns">
+  <div class="row coin-form">
+    <div class="large-8 large-centered columns">
+      <form action="/coin/<%= @coin.id %>/edit" method="POST">
+        <%= display_error %>
+        <h3><i class="fa fa-circle coin"></i> Edit Your Coin:</h3>
+        <textarea type="text" name="coin[content]" rows="3"><%= @coin.content %></textarea><br>
+        <input type="hidden" name="_method" value="PUT">
+        <button type="submit" class="button success expand" value="Submit">SAVE</button>
+      </form>
+      <form action="/coin/<%= @coin.id %>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <button type="submit" class="button alert expand" value="Submit">DELETE</button>
+      </form>
+    </div>
+  </div>
+</div>

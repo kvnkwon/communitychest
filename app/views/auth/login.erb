@@ -1,8 +1,14 @@
-<%= display_error %>
-<form action='/login' method="POST">
-  Username:<br>
-  <input type="text" name="user[name]" style="width: 30%;"><br>
-  Password:<br>
-  <input type="password" name="user[password]" style="width: 30%;"><br>
-  <input type="submit" value="Login">
-</form>
+<div class="small-8 small-centered columns">
+  <form action='/login' method="POST">
+    <div class="row coin-form">
+      <div class="large-8 large-centered columns">
+        <%= display_error %>
+        <h3>Username:</h3>
+        <input type="text" name="user[name]"><br>
+        <h3>Password:</h3>
+        <input type="password" name="user[password]"><br>
+        <button type="submit" class="button default expand" value="Login">LOGIN</button>
+      </div>
+    </div>
+  </form>
+</div>

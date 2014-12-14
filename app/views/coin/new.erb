@@ -1,6 +1,12 @@
-<form action="/coin/new" method="POST">
-  <%= display_error %>
-  <label>Advice:</label>
-  <input type="text" name="coin[content]" placeholder="Keep it under 140 characters." style="width: 30%;" /><br>
-  <button type="submit" class="button default" value="Submit">Submit!</button>
-</form>
+<div class="small-8 small-centered columns">
+  <form action="/coin/new" method="POST">
+    <div class="row coin-form">
+      <div class="large-8 large-centered columns">
+        <%= display_error %>
+        <h3><i class="fa fa-circle coin"></i> Your Coin:</h3>
+        <textarea type="text" name="coin[content]" placeholder="Share your advice here. Keep it under 140 characters please." rows="3"></textarea><br>
+        <button type="submit" class="button default expand" value="Submit">DEPOSIT</button>
+      </div>
+    </div>
+  </form>
+</div>
