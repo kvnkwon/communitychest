@@ -6,6 +6,7 @@ $(document).ready(function() {
       dataType: "json"
     }).done(function(response){
       console.log(response);
+        $(".index-prompt").fadeOut();
         $(".graphic-index").fadeOut(function(){
         $(this).css("background-image", "url('../img/coin-hi.png')");
         $("#coin-advice").css("visibility", "visible");
