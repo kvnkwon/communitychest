@@ -1,10 +1,16 @@
-<%= display_error %>
-<form action='/signup' method="POST">
-  Username:<br>
-  <input type="text" name="user[name]" style="width: 30%;"><br>
-  Password:<br>
-  <input type="password" name="user[password]" style="width: 30%;"><br>
-  Password Confirmation:<br>
-  <input type="password" name="user[password_confirmation]" style="width: 30%;"><br>
-  <input type="submit" value="Signup">
-</form>
+<div class="small-8 small-centered columns">
+  <form action='/signup' method="POST">
+    <div class="row coin-form">
+      <div class="large-8 large-centered columns">
+        <%= display_error %>
+        <h3>Username:</h3>
+        <input type="text" name="user[name]"><br>
+        <h3>Password:</h3>
+        <input type="password" name="user[password]"><br>
+        <h3>Password Confirmation:</h3>
+        <input type="password" name="user[password_confirmation]"><br>
+        <button type="submit" class="button default expand">SIGNUP</button>
+      </div>
+    </div>
+  </form>
+</div>
