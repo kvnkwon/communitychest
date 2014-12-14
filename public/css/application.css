@@ -38,6 +38,11 @@ a, h1, h2, h3, h4, .button {
   margin-top: 8em;
 }
 
+.user-loot {
+  color: #00BAE5;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
 .graphic-index {
   background-image: url("../img/chest.png");
   background-repeat: no-repeat;
