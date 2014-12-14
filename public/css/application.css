@@ -31,12 +31,11 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-
   display: table-cell;
   vertical-align: middle;
 }
 
-.coin-graphic {
+/*.coin-graphic {
   margin-top: 10%;
   background-image: url("../img/coin-hi.png");
   background-repeat: no-repeat;
@@ -44,11 +43,11 @@ a {
   background-position: center;
   height: 650px;
   width: 80%;
-
   display: none;
   vertical-align: middle;
-}
+}*/
 
-.coin-advice {
+#coin-advice {
   text-align: center;
+  visibility: hidden;
 }
