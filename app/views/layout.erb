@@ -15,25 +15,25 @@
   <link rel="stylesheet" href="/css/foundation.css">
   <link rel="stylesheet" href="/css/application.css">
 
+  <link rel="stylesheet" href="/font-awesome-4.2.0/css/font-awesome.min.css">
+
   <script src="/js/vendor/modernizr.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
   <script src="/js/vendor/jquery.js"></script>
   <script src="/js/foundation.min.js"></script>
+  <script src="/js/mousetrap.js"></script>
   <script>
     $(document).foundation();
   </script>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
   <title>DBC Community Chest</title>
 </head>
 <body>
  <header>
-  <div id="login-bar">
-    <% if current_user %>
-      <a href="/logout">Logout</a>
-    <% else %>
-      <a href="/login">Login</a> | <a href="/signup">Signup</a>
-    <% end %>
+  <%= erb :nav %>
   </header>
   <%= yield %>
 </body>

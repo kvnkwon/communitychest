@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url("../img/skulls.png") repeat 0 0;
+  height: 100%;
+  width: 100%;
+}
+
+a, h1, h2, h3, h4, .button {
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.site-logo {
+  font-size: 1.5125rem;
+  color: rgb(238, 191, 16) !important;
+}
+
+.vert-container {
+  display: table;
+  height: 100%;
+  width: 50%;
+  max-width: 650px;
+}
+
+.index-prompt {
+  margin-top: 10vh;
+  padding-bottom: 20px;
+  margin-bottom: -4vh;
+}
+
+.coin {
+  color: #EEBF10;
+}
+
+.coin-form {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.user-loot {
+  color: #00BAE5;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.graphic-index {
+  background-image: url("../img/chest.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#coin-advice {
+  text-align: center;
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  word-wrap: break-word;
+  font-size: 32px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #333333;
+}
+
+@media (max-width: 1110px) {
+  #coin-advice {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 840px) {
+  #coin-advice {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 645px) {
+  #coin-advice {
+    font-size: 16px;
+  }
+}
