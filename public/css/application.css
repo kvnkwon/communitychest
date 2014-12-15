@@ -26,7 +26,9 @@ a, h1, h2, h3, h4, .button {
 }
 
 .index-prompt {
-  margin-top: 15px;
+  margin-top: 10vh;
+  padding-bottom: 20px;
+  margin-bottom: -4vh;
 }
 
 .coin {
@@ -34,8 +36,8 @@ a, h1, h2, h3, h4, .button {
 }
 
 .coin-form {
-  margin-top: 8em;
-  margin-bottom: 8em;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .user-loot {
